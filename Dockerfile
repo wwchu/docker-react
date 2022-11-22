@@ -1,4 +1,4 @@
-FROM alpine:3.14 as builder
+FROM node:19-alpine as builder
 WORKDIR '/app'
 COPY package.json .
 RUN npm install
